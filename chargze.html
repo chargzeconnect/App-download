@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Download Chargze App</title>
+<script>
+window.onload = function () {
+const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+if (/android/i.test(userAgent)) {
+window.location.href = "https://play.google.com/store/apps/details?id=com.chargzeapp.chargze";
+} else if (/iPad|iPhone|iPod/.test(userAgent)) {
+window.location.href = "https://apps.apple.com/in/app/chargze/id6748604520";
+} else {
+window.location.href = "https://chargze.com";
+}
+};
+</script>
+</head>
+<body>
+<p style="text-align:center;margin-top:40vh;">Redirecting to the right store...</p>
+</body>
+</html>
